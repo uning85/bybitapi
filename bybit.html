@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.shape-ex1{
+    
+    background-color: #FFA500;
+    margin: 0 auto;
+    animation: fadeOut 5s linear 0s infinite;
+	animation-iteration-count:1
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+</style>
+<head>
+    <title>自動AJAX網頁畫面</title>
+</head>
+<body>
+    <h1>自動AJAX網頁畫面</h1>
+    <button onclick="clickClearInterval()">更新資料</button>
+    <div id="data-container"></div>
+	
+	<table id="test" border="1">
+	   <tbody>
+			<tr id='symbol' ><td>symbol</td></tr>
+			<tr id='buy'><td>buy</td></tr>
+			<tr id='sell'><td>sell</td></tr>
+			<tr id='spare'><td>spare</td></tr>
+		</tbody>
+		<tfoot>
+			
+		</tfoot>
+	</table>
+	
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
