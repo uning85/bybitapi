@@ -18,19 +18,21 @@
 }
 </style>
 <head>
-    <title>自動AJAX網頁畫面</title>
+    <title>BYBIT SPARE</title>
 </head>
 <body>
-    <h1>自動AJAX網頁畫面</h1>
-    <button onclick="clickClearInterval()">更新資料</button>
+    <h1>SPARE</h1>
+    <button onclick="clickClearInterval()">暫停更新</button>
     <div id="data-container"></div>
 	
 	<table id="test" border="1">
-	   <tbody>
+	<caption id="time"></caption>
+	   <tbody align="right">
 			<tr id='symbol' ><td>symbol</td></tr>
 			<tr id='buy'><td>buy</td></tr>
 			<tr id='sell'><td>sell</td></tr>
 			<tr id='spare'><td>spare</td></tr>
+			<tr id='history_rate'><td>rate</td></tr>
 		</tbody>
 		<tfoot>
 			
@@ -38,9 +40,10 @@
 	</table>
 	
 
-
+    <div id="count">0</div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+	<script src="script2.js"></script>
 </body>
 </html>
 
